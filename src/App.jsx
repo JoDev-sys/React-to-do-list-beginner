@@ -18,7 +18,7 @@ const App = () => {
       <button onClick={btnClick}>click + 1</button>
       <br />
       <button onClick={subBtnClick} style={{ marginTop: '20px' }}>click - 1</button>
-      <FirstComponent data={click} />
+      <FirstComponent data={click} fn={setClick} />
     </div>
   )
  }
