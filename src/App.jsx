@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { FirstComponent } from './components/FirstComponent';
 
 const App = () => {
 
@@ -14,10 +15,10 @@ const App = () => {
 
   return (
     <div>
-      <h1>{click}</h1>
       <button onClick={btnClick}>click + 1</button>
       <br />
       <button onClick={subBtnClick} style={{ marginTop: '20px' }}>click - 1</button>
+      <FirstComponent data={click} />
     </div>
   )
  }
